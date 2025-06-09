@@ -77,8 +77,10 @@ git clone https://github.com/kiharalab/DAQ && cd DAQ
 ##### 3.2 Install dependency in command line
 ```
 ./install.sh
-or
-./install.sh <my-daq-env-name> (if you want to specify your own name for the conda environment)
+```
+or, if you want to specify a custom conda environment name:
+```
+./install.sh <my-custom-daq-env-name>
 ```
 * This version of PyTorch supports a wider range of GPUs. We tested the following generations of NVIDIA GPUs:
   * Pascal (GTX 1080)
@@ -93,6 +95,7 @@ Each time when you want to run my code, simply activate the environment by
 conda activate daq
 conda deactivate(If you want to exit)
 ```
+**Note:** If you created a conda environment with a custom name, you will need to run `conda activate <your-custom-name>` instead of the command shown above.
 
 ## Usage
 ```
