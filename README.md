@@ -78,8 +78,7 @@ git clone https://github.com/kiharalab/DAQ && cd DAQ
 ```
 conda create -n daq python=3.10 gcc gxx -c conda-forge
 conda activate daq
-pip3 install -r requirements.txt
-pip3 install torch==2.6.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+./install.sh
 ```
 * This version of PyTorch supports a wider range of GPUs. We tested the following generations of NVIDIA GPUs:
   * Pascal (GTX 1080)
