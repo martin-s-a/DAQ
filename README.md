@@ -76,9 +76,9 @@ git clone https://github.com/kiharalab/DAQ && cd DAQ
 ##### 3.1 [`install conda`](https://bit.ly/daq-score).
 ##### 3.2 Install dependency in command line
 ```
-conda create -n daq python=3.10 gcc gxx -c conda-forge
-conda activate daq
 ./install.sh
+or
+./install.sh <my-daq-env-name> (if you want to specify your own name for the conda environment)
 ```
 * This version of PyTorch supports a wider range of GPUs. We tested the following generations of NVIDIA GPUs:
   * Pascal (GTX 1080)
